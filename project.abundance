@@ -10,35 +10,39 @@
     {
       "atomType": "Output",
       "name": "Output",
-      "x": 0.98,
-      "y": 0.5,
+      "x": 0.9697604790419163,
+      "y": 0.5031685678073511,
       "uniqueID": "id-2",
       "ioValues": []
     },
     {
       "atomType": "Rectangle",
       "name": "Rectangle",
-      "x": 0.2967065868263473,
-      "y": 0.5817490494296578,
+      "x": 0.3002994011976048,
+      "y": 0.5918884664131812,
       "uniqueID": "id-4",
       "ioValues": [
         {
           "name": "x length",
           "ioValue": 1000,
-          "currentEquation": "1000"
+          "currentEquation": "Height"
         },
         {
           "name": "y length",
           "ioValue": 60,
           "currentEquation": "60"
+        },
+        {
+          "name": "Height",
+          "ioValue": 1
         }
       ]
     },
     {
       "atomType": "Extrude",
       "name": "Extrude",
-      "x": 0.4032934131736527,
-      "y": 0.5564005069708492,
+      "x": 0.4029940119760479,
+      "y": 0.7148288973384029,
       "uniqueID": "id-8",
       "ioValues": [
         {
@@ -51,8 +55,8 @@
     {
       "atomType": "Rotate",
       "name": "Rotate",
-      "x": 0.6080838323353293,
-      "y": 0.5728770595690748,
+      "x": 0.5565868263473054,
+      "y": 0.5944233206590621,
       "uniqueID": "id-18",
       "ioValues": [
         {
@@ -75,8 +79,8 @@
     {
       "atomType": "Move",
       "name": "Move",
-      "x": 0.6787425149700599,
-      "y": 0.5513307984790874,
+      "x": 0.6673652694610779,
+      "y": 0.36501901140684406,
       "uniqueID": "id-24",
       "ioValues": [
         {
@@ -90,10 +94,37 @@
         },
         {
           "name": "zDist",
-          "ioValue": 50,
-          "currentEquation": "50"
+          "ioValue": 0,
+          "currentEquation": "500"
         }
       ]
+    },
+    {
+      "atomType": "Constant",
+      "name": "Height",
+      "x": 0.11467065868263472,
+      "y": 0.38276299112801015,
+      "uniqueID": "id-30",
+      "ioValues": [],
+      "value": 1000
+    },
+    {
+      "atomType": "Constant",
+      "name": "Thickness",
+      "x": 0.12604790419161677,
+      "y": 0.7756653992395437,
+      "uniqueID": "id-33",
+      "ioValues": [],
+      "value": 18
+    },
+    {
+      "atomType": "Constant",
+      "name": "Width",
+      "x": 0.11137724550898204,
+      "y": 0.5310519645120406,
+      "uniqueID": "id-35",
+      "ioValues": [],
+      "value": 60
     }
   ],
   "allConnectors": [
@@ -120,6 +151,24 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-24",
       "ap2ID": "id-2"
+    },
+    {
+      "ap1Name": "number",
+      "ap2Name": "x length",
+      "ap1ID": "id-30",
+      "ap2ID": "id-4"
+    },
+    {
+      "ap1Name": "number",
+      "ap2Name": "height",
+      "ap1ID": "id-33",
+      "ap2ID": "id-8"
+    },
+    {
+      "ap1Name": "number",
+      "ap2Name": "y length",
+      "ap1ID": "id-35",
+      "ap2ID": "id-4"
     }
   ],
   "unitsKey": "MM",
